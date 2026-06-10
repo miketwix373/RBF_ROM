@@ -1,0 +1,4 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: opt-in via -m slow"]
+addopts = "-m 'not slow'"

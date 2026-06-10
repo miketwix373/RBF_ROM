@@ -1,0 +1,521 @@
+[
+  {
+    "n_rbf": 20,
+    "lambda_poly": 1.0,
+    "lambda_rbf": 0.5,
+    "gamma": 1.0,
+    "n_knn": 5,
+    "constrain_energy": true,
+    "stage1_residual_norm": 2.0784226427235653,
+    "dAdt_norm": 24748.387776215994,
+    "stage1_R_over_dAdt": 8.398214305988033e-05,
+    "cond_pre_gate": 295.68339205031265,
+    "cond_post_gate": 295.68339205031265,
+    "stage1_n_iter": 3,
+    "stage2_n_iter": 2,
+    "xi_poly_norm": 31.5283855972341,
+    "xi_rbf_norm": 0.4754104715709516,
+    "poly_pred_norm": 24748.387688940817,
+    "rbf_pred_norm": 1.6235700241534048,
+    "cond1_coeff_ratio": 0.015078807955604873,
+    "functional_ratio_rbf_over_poly": 6.560306249279104e-05,
+    "acceptance": {
+      "pass": false,
+      "cond1_ratio": {
+        "value": 0.015078807955604873,
+        "tol": 0.001,
+        "pass": false
+      },
+      "cond2_nnz_rbf": {
+        "value": 19,
+        "max": 2,
+        "pass": false
+      },
+      "cond3_coeffs": {
+        "max_rel_err": 0.00023058740167525293,
+        "tol": 0.05,
+        "pass": true,
+        "per_coeff": {
+          "sigma_dx_a0": {
+            "fit": -9.999868634581594,
+            "truth": -10.0,
+            "rel_err": 1.31365418406304e-05
+          },
+          "sigma_dx_a1": {
+            "fit": 9.999868684464296,
+            "truth": 10.0,
+            "rel_err": 1.3131553570389088e-05
+          },
+          "rho_dy_a0": {
+            "fit": 27.998826668507718,
+            "truth": 28.0,
+            "rel_err": 4.190469615293425e-05
+          },
+          "neg1_dy_a1": {
+            "fit": -0.9997694125983247,
+            "truth": -1.0,
+            "rel_err": 0.00023058740167525293
+          },
+          "xz_dy": {
+            "fit": -0.9999671372383124,
+            "truth": -1.0,
+            "rel_err": 3.286276168756874e-05
+          },
+          "beta_dz_a2": {
+            "fit": -2.6665801523922226,
+            "truth": -2.6666666666666665,
+            "rel_err": 3.244285291648108e-05
+          },
+          "xy_dz": {
+            "fit": 0.9999671372383125,
+            "truth": 1.0,
+            "rel_err": 3.286276168745772e-05
+          }
+        }
+      },
+      "cond4_jacobians": {
+        "pass": true,
+        "per_point": {
+          "origin": {
+            "fixed_point": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "eigenvalues": [
+              {
+                "real": -22.827068052257353,
+                "imag": 0.0
+              },
+              {
+                "real": 11.827353267492795,
+                "imag": 0.0
+              },
+              {
+                "real": -2.666468770077594,
+                "imag": 0.0
+              }
+            ],
+            "n_unstable": 1,
+            "expected_unstable": 1,
+            "match": true
+          },
+          "C_plus": {
+            "fixed_point": [
+              8.48528137423857,
+              8.48528137423857,
+              27.0
+            ],
+            "eigenvalues": [
+              {
+                "real": -13.85411755296238,
+                "imag": 0.0
+              },
+              {
+                "real": 0.09333195091001611,
+                "imag": 10.194847487688683
+              },
+              {
+                "real": 0.09333195091001611,
+                "imag": -10.194847487688683
+              }
+            ],
+            "n_unstable": 2,
+            "expected_unstable": 2,
+            "match": true
+          },
+          "C_minus": {
+            "fixed_point": [
+              -8.48528137423857,
+              -8.48528137423857,
+              27.0
+            ],
+            "eigenvalues": [
+              {
+                "real": -13.854120076913784,
+                "imag": 0.0
+              },
+              {
+                "real": 0.09317045891863529,
+                "imag": 10.195104631282518
+              },
+              {
+                "real": 0.09317045891863529,
+                "imag": -10.195104631282518
+              }
+            ],
+            "n_unstable": 2,
+            "expected_unstable": 2,
+            "match": true
+          }
+        }
+      },
+      "xi_poly_norm": 31.5283855972341,
+      "xi_rbf_norm": 0.4754104715709516,
+      "notes": [
+        "ratio (cond 1) fails but coefficients (cond 3) pass: likely a broken moment-orthogonalisation or constraint scaling."
+      ]
+    },
+    "summary": {
+      "rbf_kind": "flat_isotropic",
+      "n_rbf": 20,
+      "xi_poly_norm": 31.5283855972341,
+      "xi_rbf_norm": 0.4754104715709516,
+      "ratio": 0.015078807955604873,
+      "nnz_poly": 6,
+      "nnz_rbf": 19,
+      "stlsq_iters": 0,
+      "stlsq_converged": false,
+      "constraint_residual": NaN,
+      "lambda_poly": 1.0,
+      "lambda_rbf": 0.5
+    },
+    "model_path": "/mnt/scratch/users/sbrw610/CHORD2/results/LOR63/phase0_backfit/models/model_LOR63_n_rbf_020.npz"
+  },
+  {
+    "n_rbf": 50,
+    "lambda_poly": 1.0,
+    "lambda_rbf": 0.5,
+    "gamma": 1.0,
+    "n_knn": 5,
+    "constrain_energy": true,
+    "stage1_residual_norm": 2.0784226427235653,
+    "dAdt_norm": 24748.387776215994,
+    "stage1_R_over_dAdt": 8.398214305988033e-05,
+    "cond_pre_gate": 217.153331014035,
+    "cond_post_gate": 217.153331014035,
+    "stage1_n_iter": 3,
+    "stage2_n_iter": 3,
+    "xi_poly_norm": 31.5283855972341,
+    "xi_rbf_norm": 0.4241216231292485,
+    "poly_pred_norm": 24748.387688940817,
+    "rbf_pred_norm": 1.9865534500417141,
+    "cond1_coeff_ratio": 0.013452056459448261,
+    "functional_ratio_rbf_over_poly": 8.027001496058812e-05,
+    "acceptance": {
+      "pass": false,
+      "cond1_ratio": {
+        "value": 0.013452056459448261,
+        "tol": 0.001,
+        "pass": false
+      },
+      "cond2_nnz_rbf": {
+        "value": 46,
+        "max": 2,
+        "pass": false
+      },
+      "cond3_coeffs": {
+        "max_rel_err": 0.00023058740167525293,
+        "tol": 0.05,
+        "pass": true,
+        "per_coeff": {
+          "sigma_dx_a0": {
+            "fit": -9.999868634581594,
+            "truth": -10.0,
+            "rel_err": 1.31365418406304e-05
+          },
+          "sigma_dx_a1": {
+            "fit": 9.999868684464296,
+            "truth": 10.0,
+            "rel_err": 1.3131553570389088e-05
+          },
+          "rho_dy_a0": {
+            "fit": 27.998826668507718,
+            "truth": 28.0,
+            "rel_err": 4.190469615293425e-05
+          },
+          "neg1_dy_a1": {
+            "fit": -0.9997694125983247,
+            "truth": -1.0,
+            "rel_err": 0.00023058740167525293
+          },
+          "xz_dy": {
+            "fit": -0.9999671372383124,
+            "truth": -1.0,
+            "rel_err": 3.286276168756874e-05
+          },
+          "beta_dz_a2": {
+            "fit": -2.6665801523922226,
+            "truth": -2.6666666666666665,
+            "rel_err": 3.244285291648108e-05
+          },
+          "xy_dz": {
+            "fit": 0.9999671372383125,
+            "truth": 1.0,
+            "rel_err": 3.286276168745772e-05
+          }
+        }
+      },
+      "cond4_jacobians": {
+        "pass": true,
+        "per_point": {
+          "origin": {
+            "fixed_point": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "eigenvalues": [
+              {
+                "real": -22.827045045868118,
+                "imag": 0.0
+              },
+              {
+                "real": 11.827783033577248,
+                "imag": 0.0
+              },
+              {
+                "real": -2.6666496529974637,
+                "imag": 0.0
+              }
+            ],
+            "n_unstable": 1,
+            "expected_unstable": 1,
+            "match": true
+          },
+          "C_plus": {
+            "fixed_point": [
+              8.48528137423857,
+              8.48528137423857,
+              27.0
+            ],
+            "eigenvalues": [
+              {
+                "real": -13.854202206331234,
+                "imag": 0.0
+              },
+              {
+                "real": 0.09432327498754811,
+                "imag": 10.194214579506776
+              },
+              {
+                "real": 0.09432327498754811,
+                "imag": -10.194214579506776
+              }
+            ],
+            "n_unstable": 2,
+            "expected_unstable": 2,
+            "match": true
+          },
+          "C_minus": {
+            "fixed_point": [
+              -8.48528137423857,
+              -8.48528137423857,
+              27.0
+            ],
+            "eigenvalues": [
+              {
+                "real": -13.854309613517598,
+                "imag": 0.0
+              },
+              {
+                "real": 0.09445193035586608,
+                "imag": 10.193994415049962
+              },
+              {
+                "real": 0.09445193035586608,
+                "imag": -10.193994415049962
+              }
+            ],
+            "n_unstable": 2,
+            "expected_unstable": 2,
+            "match": true
+          }
+        }
+      },
+      "xi_poly_norm": 31.5283855972341,
+      "xi_rbf_norm": 0.4241216231292485,
+      "notes": [
+        "ratio (cond 1) fails but coefficients (cond 3) pass: likely a broken moment-orthogonalisation or constraint scaling."
+      ]
+    },
+    "summary": {
+      "rbf_kind": "flat_isotropic",
+      "n_rbf": 50,
+      "xi_poly_norm": 31.5283855972341,
+      "xi_rbf_norm": 0.4241216231292485,
+      "ratio": 0.013452056459448261,
+      "nnz_poly": 6,
+      "nnz_rbf": 46,
+      "stlsq_iters": 0,
+      "stlsq_converged": false,
+      "constraint_residual": NaN,
+      "lambda_poly": 1.0,
+      "lambda_rbf": 0.5
+    },
+    "model_path": "/mnt/scratch/users/sbrw610/CHORD2/results/LOR63/phase0_backfit/models/model_LOR63_n_rbf_050.npz"
+  },
+  {
+    "n_rbf": 100,
+    "lambda_poly": 1.0,
+    "lambda_rbf": 0.5,
+    "gamma": 1.0,
+    "n_knn": 5,
+    "constrain_energy": true,
+    "stage1_residual_norm": 2.0784226427235653,
+    "dAdt_norm": 24748.387776215994,
+    "stage1_R_over_dAdt": 8.398214305988033e-05,
+    "cond_pre_gate": 482.23173397193744,
+    "cond_post_gate": 482.23173397193744,
+    "stage1_n_iter": 3,
+    "stage2_n_iter": 6,
+    "xi_poly_norm": 31.5283855972341,
+    "xi_rbf_norm": 0.3257093297104497,
+    "poly_pred_norm": 24748.387688940817,
+    "rbf_pred_norm": 1.985742008230991,
+    "cond1_coeff_ratio": 0.010330669444077826,
+    "functional_ratio_rbf_over_poly": 8.023722729696647e-05,
+    "acceptance": {
+      "pass": false,
+      "cond1_ratio": {
+        "value": 0.010330669444077826,
+        "tol": 0.001,
+        "pass": false
+      },
+      "cond2_nnz_rbf": {
+        "value": 36,
+        "max": 2,
+        "pass": false
+      },
+      "cond3_coeffs": {
+        "max_rel_err": 0.00023058740167525293,
+        "tol": 0.05,
+        "pass": true,
+        "per_coeff": {
+          "sigma_dx_a0": {
+            "fit": -9.999868634581594,
+            "truth": -10.0,
+            "rel_err": 1.31365418406304e-05
+          },
+          "sigma_dx_a1": {
+            "fit": 9.999868684464296,
+            "truth": 10.0,
+            "rel_err": 1.3131553570389088e-05
+          },
+          "rho_dy_a0": {
+            "fit": 27.998826668507718,
+            "truth": 28.0,
+            "rel_err": 4.190469615293425e-05
+          },
+          "neg1_dy_a1": {
+            "fit": -0.9997694125983247,
+            "truth": -1.0,
+            "rel_err": 0.00023058740167525293
+          },
+          "xz_dy": {
+            "fit": -0.9999671372383124,
+            "truth": -1.0,
+            "rel_err": 3.286276168756874e-05
+          },
+          "beta_dz_a2": {
+            "fit": -2.6665801523922226,
+            "truth": -2.6666666666666665,
+            "rel_err": 3.244285291648108e-05
+          },
+          "xy_dz": {
+            "fit": 0.9999671372383125,
+            "truth": 1.0,
+            "rel_err": 3.286276168745772e-05
+          }
+        }
+      },
+      "cond4_jacobians": {
+        "pass": true,
+        "per_point": {
+          "origin": {
+            "fixed_point": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "eigenvalues": [
+              {
+                "real": -22.82711069086515,
+                "imag": 0.0
+              },
+              {
+                "real": 11.827472665161096,
+                "imag": 0.0
+              },
+              {
+                "real": -2.6665801232899677,
+                "imag": 0.0
+              }
+            ],
+            "n_unstable": 1,
+            "expected_unstable": 1,
+            "match": true
+          },
+          "C_plus": {
+            "fixed_point": [
+              8.48528137423857,
+              8.48528137423857,
+              27.0
+            ],
+            "eigenvalues": [
+              {
+                "real": -13.85419577392666,
+                "imag": 0.0
+              },
+              {
+                "real": 0.09332383583181281,
+                "imag": 10.194278907176558
+              },
+              {
+                "real": 0.09332383583181281,
+                "imag": -10.194278907176558
+              }
+            ],
+            "n_unstable": 2,
+            "expected_unstable": 2,
+            "match": true
+          },
+          "C_minus": {
+            "fixed_point": [
+              -8.48528137423857,
+              -8.48528137423857,
+              27.0
+            ],
+            "eigenvalues": [
+              {
+                "real": -13.854226432802447,
+                "imag": 0.0
+              },
+              {
+                "real": 0.09343220100438776,
+                "imag": 10.194451069771489
+              },
+              {
+                "real": 0.09343220100438776,
+                "imag": -10.194451069771489
+              }
+            ],
+            "n_unstable": 2,
+            "expected_unstable": 2,
+            "match": true
+          }
+        }
+      },
+      "xi_poly_norm": 31.5283855972341,
+      "xi_rbf_norm": 0.3257093297104497,
+      "notes": [
+        "ratio (cond 1) fails but coefficients (cond 3) pass: likely a broken moment-orthogonalisation or constraint scaling."
+      ]
+    },
+    "summary": {
+      "rbf_kind": "flat_isotropic",
+      "n_rbf": 100,
+      "xi_poly_norm": 31.5283855972341,
+      "xi_rbf_norm": 0.3257093297104497,
+      "ratio": 0.010330669444077826,
+      "nnz_poly": 6,
+      "nnz_rbf": 36,
+      "stlsq_iters": 0,
+      "stlsq_converged": false,
+      "constraint_residual": NaN,
+      "lambda_poly": 1.0,
+      "lambda_rbf": 0.5
+    },
+    "model_path": "/mnt/scratch/users/sbrw610/CHORD2/results/LOR63/phase0_backfit/models/model_LOR63_n_rbf_100.npz"
+  }
+]

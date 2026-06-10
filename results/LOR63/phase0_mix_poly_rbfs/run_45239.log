@@ -1,0 +1,141 @@
+=============================================
+CHORD2 Phase 0 L63 robustness sweep
+=============================================
+Start time: Sun  7 Jun 19:30:31 BST 2026
+Args:       --workers 48
+
+==========================================
+SLURM JOB
+==========================================
+Job ID:        45239
+Node:          node043
+CPUs per task: 48
+Memory:        32768 MB
+
+==========================================
+RUNNING python -u -m scripts.run_phase0_l63_robustness --workers 48
+==========================================
+Loaded Dataset(name='LOR63', M=50001, N=3, dt=0.01, T=500); sigma=10.0, rho=28.0, beta=2.6667
+
+--- Layer 2 baseline: quad-only fit ---
+  quad-only PASS = True
+    cond3 max_rel_err: 2.306e-04
+    cond4 pass       : True
+
+--- Layer 1 grid: 4 x 5 x 5 = 100 fits (workers=48) ---
+  [  1/100]  n_rbf= 20  lam_rbf=10.00  seed=1: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [  2/100]  n_rbf= 20  lam_rbf= 1.00  seed=1: pass=False  ratio=4.80e-02  nnz= 11  qj=6.62e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [  3/100]  n_rbf= 20  lam_rbf= 0.30  seed=1: pass=False  ratio=6.69e-02  nnz= 20  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [  4/100]  n_rbf= 20  lam_rbf= 3.00  seed=1: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [  5/100]  n_rbf= 20  lam_rbf= 0.10  seed=1: pass=False  ratio=6.69e-02  nnz= 20  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [  6/100]  n_rbf= 20  lam_rbf= 3.00  seed=2: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [  7/100]  n_rbf= 20  lam_rbf= 0.10  seed=2: pass=False  ratio=6.71e-02  nnz= 20  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [  8/100]  n_rbf= 20  lam_rbf=10.00  seed=2: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [  9/100]  n_rbf= 20  lam_rbf= 1.00  seed=2: pass=False  ratio=4.81e-02  nnz= 11  qj=6.62e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 10/100]  n_rbf= 20  lam_rbf= 0.30  seed=2: pass=False  ratio=6.71e-02  nnz= 20  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 11/100]  n_rbf= 20  lam_rbf= 0.30  seed=3: pass=False  ratio=6.68e-02  nnz= 20  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 12/100]  n_rbf= 20  lam_rbf= 0.10  seed=4: pass=False  ratio=6.42e-02  nnz= 20  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 13/100]  n_rbf= 20  lam_rbf= 0.30  seed=4: pass=False  ratio=6.42e-02  nnz= 20  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 14/100]  n_rbf= 20  lam_rbf= 3.00  seed=3: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 15/100]  n_rbf= 20  lam_rbf=10.00  seed=4: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 16/100]  n_rbf= 20  lam_rbf= 3.00  seed=4: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 17/100]  n_rbf= 20  lam_rbf= 1.00  seed=0: pass=False  ratio=4.81e-02  nnz= 11  qj=6.62e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 18/100]  n_rbf= 20  lam_rbf= 1.00  seed=4: pass=False  ratio=4.74e-02  nnz= 11  qj=6.62e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 19/100]  n_rbf= 20  lam_rbf=10.00  seed=3: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 20/100]  n_rbf= 20  lam_rbf= 0.10  seed=3: pass=False  ratio=6.68e-02  nnz= 20  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 21/100]  n_rbf= 20  lam_rbf= 1.00  seed=3: pass=False  ratio=4.81e-02  nnz= 11  qj=6.62e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 22/100]  n_rbf= 20  lam_rbf= 0.30  seed=0: pass=False  ratio=6.70e-02  nnz= 20  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 23/100]  n_rbf= 20  lam_rbf= 0.10  seed=0: pass=False  ratio=6.70e-02  nnz= 20  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 24/100]  n_rbf= 20  lam_rbf=10.00  seed=0: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 25/100]  n_rbf= 20  lam_rbf= 3.00  seed=0: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 26/100]  n_rbf= 50  lam_rbf= 0.30  seed=4: pass=False  ratio=1.27e-02  nnz= 44  qj=1.11e-15  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 27/100]  n_rbf= 50  lam_rbf= 0.10  seed=4: pass=False  ratio=1.28e-02  nnz= 50  qj=8.77e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 28/100]  n_rbf= 50  lam_rbf= 3.00  seed=4: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 29/100]  n_rbf= 50  lam_rbf= 1.00  seed=4: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 30/100]  n_rbf= 50  lam_rbf= 3.00  seed=0: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 31/100]  n_rbf= 50  lam_rbf= 0.30  seed=0: pass=False  ratio=1.33e-02  nnz= 44  qj=1.11e-15  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 32/100]  n_rbf= 50  lam_rbf=10.00  seed=0: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 33/100]  n_rbf= 50  lam_rbf= 1.00  seed=0: pass=False  ratio=6.13e-03  nnz=  4  qj=6.23e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 34/100]  n_rbf= 50  lam_rbf= 0.10  seed=0: pass=False  ratio=1.39e-02  nnz= 50  qj=8.77e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 35/100]  n_rbf= 50  lam_rbf= 3.00  seed=1: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 36/100]  n_rbf= 50  lam_rbf= 0.10  seed=1: pass=False  ratio=1.40e-02  nnz= 50  qj=8.77e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 37/100]  n_rbf= 50  lam_rbf=10.00  seed=1: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 38/100]  n_rbf= 50  lam_rbf= 1.00  seed=1: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 39/100]  n_rbf= 50  lam_rbf= 0.30  seed=1: pass=False  ratio=1.38e-02  nnz= 47  qj=6.74e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 40/100]  n_rbf= 50  lam_rbf= 0.10  seed=2: pass=False  ratio=1.34e-02  nnz= 50  qj=8.77e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 41/100]  n_rbf= 50  lam_rbf= 0.30  seed=2: pass=False  ratio=1.27e-02  nnz= 44  qj=1.11e-15  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 42/100]  n_rbf= 50  lam_rbf= 3.00  seed=2: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 43/100]  n_rbf= 50  lam_rbf=10.00  seed=2: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 44/100]  n_rbf= 50  lam_rbf= 1.00  seed=2: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 45/100]  n_rbf= 50  lam_rbf= 0.30  seed=3: pass=False  ratio=1.32e-02  nnz= 46  qj=8.77e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 46/100]  n_rbf= 50  lam_rbf=10.00  seed=4: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 47/100]  n_rbf= 50  lam_rbf= 3.00  seed=3: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 48/100]  n_rbf= 50  lam_rbf= 1.00  seed=3: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 49/100]  n_rbf= 50  lam_rbf= 0.10  seed=3: pass=False  ratio=1.36e-02  nnz= 50  qj=8.77e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 50/100]  n_rbf= 50  lam_rbf=10.00  seed=3: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 51/100]  n_rbf=100  lam_rbf= 0.30  seed=3: pass=False  ratio=1.47e-02  nnz= 76  qj=9.26e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 52/100]  n_rbf=100  lam_rbf= 0.10  seed=4: pass=False  ratio=1.45e-02  nnz= 98  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 53/100]  n_rbf=100  lam_rbf= 0.10  seed=3: pass=False  ratio=1.50e-02  nnz= 99  qj=5.44e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 54/100]  n_rbf=100  lam_rbf= 1.00  seed=3: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 55/100]  n_rbf=100  lam_rbf= 0.30  seed=4: pass=False  ratio=1.32e-02  nnz= 81  qj=6.62e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 56/100]  n_rbf=100  lam_rbf= 3.00  seed=3: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 57/100]  n_rbf=100  lam_rbf= 3.00  seed=4: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 58/100]  n_rbf=100  lam_rbf= 0.30  seed=0: pass=False  ratio=1.13e-02  nnz= 36  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 59/100]  n_rbf=100  lam_rbf= 1.00  seed=4: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 60/100]  n_rbf=100  lam_rbf= 1.00  seed=0: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 61/100]  n_rbf=100  lam_rbf=10.00  seed=0: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 62/100]  n_rbf=100  lam_rbf= 0.10  seed=0: pass=False  ratio=1.30e-02  nnz= 97  qj=6.62e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 63/100]  n_rbf=100  lam_rbf= 3.00  seed=0: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 64/100]  n_rbf=100  lam_rbf= 0.10  seed=2: pass=False  ratio=1.39e-02  nnz= 99  qj=5.44e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 65/100]  n_rbf=100  lam_rbf= 0.30  seed=2: pass=False  ratio=1.05e-02  nnz= 33  qj=5.44e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 66/100]  n_rbf=100  lam_rbf= 1.00  seed=2: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 67/100]  n_rbf=100  lam_rbf= 3.00  seed=2: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 68/100]  n_rbf=100  lam_rbf=10.00  seed=2: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 69/100]  n_rbf=100  lam_rbf= 3.00  seed=1: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 70/100]  n_rbf=100  lam_rbf=10.00  seed=1: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 71/100]  n_rbf=100  lam_rbf= 0.10  seed=1: pass=False  ratio=1.63e-02  nnz= 99  qj=5.44e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 72/100]  n_rbf=100  lam_rbf= 0.30  seed=1: pass=False  ratio=1.57e-02  nnz= 82  qj=9.26e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 73/100]  n_rbf=100  lam_rbf= 1.00  seed=1: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 74/100]  n_rbf=100  lam_rbf=10.00  seed=3: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 75/100]  n_rbf=100  lam_rbf=10.00  seed=4: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 76/100]  n_rbf=200  lam_rbf= 0.10  seed=1: pass=False  ratio=1.71e-02  nnz=193  qj=5.44e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 77/100]  n_rbf=200  lam_rbf= 0.10  seed=4: pass=False  ratio=1.69e-02  nnz=185  qj=6.76e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 78/100]  n_rbf=200  lam_rbf= 0.30  seed=1: pass=False  ratio=1.12e-02  nnz= 24  qj=6.23e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 79/100]  n_rbf=200  lam_rbf= 0.30  seed=3: pass=False  ratio=1.13e-02  nnz= 27  qj=5.44e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 80/100]  n_rbf=200  lam_rbf= 0.10  seed=3: pass=False  ratio=1.55e-02  nnz=170  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 81/100]  n_rbf=200  lam_rbf= 0.30  seed=4: pass=False  ratio=1.53e-02  nnz= 42  qj=1.11e-15  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 82/100]  n_rbf=200  lam_rbf= 0.10  seed=0: pass=False  ratio=1.56e-02  nnz=188  qj=9.83e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 83/100]  n_rbf=200  lam_rbf= 0.30  seed=0: pass=False  ratio=1.09e-02  nnz= 39  qj=6.74e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 84/100]  n_rbf=200  lam_rbf= 1.00  seed=4: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 85/100]  n_rbf=200  lam_rbf= 1.00  seed=1: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 86/100]  n_rbf=200  lam_rbf= 3.00  seed=1: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 87/100]  n_rbf=200  lam_rbf= 1.00  seed=3: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 88/100]  n_rbf=200  lam_rbf= 1.00  seed=0: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 89/100]  n_rbf=200  lam_rbf= 0.10  seed=2: pass=False  ratio=1.77e-02  nnz=193  qj=5.44e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 90/100]  n_rbf=200  lam_rbf= 3.00  seed=4: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 91/100]  n_rbf=200  lam_rbf= 0.30  seed=2: pass=False  ratio=1.30e-02  nnz= 34  qj=8.69e-16  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 92/100]  n_rbf=200  lam_rbf= 3.00  seed=0: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 93/100]  n_rbf=200  lam_rbf=10.00  seed=1: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 94/100]  n_rbf=200  lam_rbf=10.00  seed=0: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 95/100]  n_rbf=200  lam_rbf= 3.00  seed=3: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 96/100]  n_rbf=200  lam_rbf= 3.00  seed=2: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 97/100]  n_rbf=200  lam_rbf= 1.00  seed=2: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 98/100]  n_rbf=200  lam_rbf=10.00  seed=4: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [ 99/100]  n_rbf=200  lam_rbf=10.00  seed=2: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+  [100/100]  n_rbf=200  lam_rbf=10.00  seed=3: pass=True   ratio=0.00e+00  nnz=  0  qj=0.00e+00  sig=9.9999  rho=27.9988  bet=2.6666
+
+--- Verdict ---
+Cells fully passing (all 5 seeds): 10/20
+Cells partially passing             : 1/20
+Quad-only fit                       : PASS (cond3 max_rel_err=2.31e-04)
+Quad-vs-joint over passing cells    : median rel diff = 0.00e+00, max = 0.00e+00
+Lorenz coeff recovery (all 100 fits):
+  passing cells: |sigma-err| median=0.0001313404750682423, |rho-err| median=0.0011733314866972933, |beta-err| median=8.651427391237476e-05
+  failing cells: |sigma-err| median=0.00013134047505758417, |rho-err| median=0.0011733314866884115, |beta-err| median=8.651427391370703e-05
+
+Outputs under /mnt/scratch/users/sbrw610/CHORD2/results/LOR63/phase0_robustness
+
+==========================================
+JOB COMPLETED
+==========================================
+End time: Sun  7 Jun 19:40:28 BST 2026

@@ -1,0 +1,235 @@
+{
+  "config": {
+    "k_grid": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_tot_grid": [
+      1280
+    ],
+    "seed": 1,
+    "kmeans_seed": 0,
+    "test_ic_seed": 7,
+    "T_test": 20.0,
+    "dt": 0.005,
+    "gamma": 1.0,
+    "lambda_rbf": 0.01,
+    "lambda_tikh": 0.0,
+    "n_knn": 5,
+    "n_init": 1,
+    "n_init_outer": 10,
+    "bandwidth_mode": "attr_scaled",
+    "dataset": "LOR63",
+    "M_train_mid": 49997,
+    "M_test_mid": 3997,
+    "dt_data": 0.00999999999999801
+  },
+  "partitions": {
+    "1": {
+      "counts": [
+        49997
+      ],
+      "var_weights": [
+        737758.5777918217
+      ],
+      "inertia": 10886191.0,
+      "n_iter": 0
+    },
+    "2": {
+      "counts": [
+        25364,
+        24633
+      ],
+      "var_weights": [
+        293835.8285697844,
+        280070.1141204988
+      ],
+      "inertia": 6588070.5,
+      "n_iter": 24
+    },
+    "3": {
+      "counts": [
+        25282,
+        12877,
+        11838
+      ],
+      "var_weights": [
+        210651.65151059732,
+        132409.1318128673,
+        123171.0959687136
+      ],
+      "inertia": 4397955.0,
+      "n_iter": 15
+    },
+    "4": {
+      "counts": [
+        20189,
+        10935,
+        9447,
+        9426
+      ],
+      "var_weights": [
+        159199.2599776866,
+        79227.67310309154,
+        91231.20196710953,
+        84997.52711037596
+      ],
+      "inertia": 3476585.25,
+      "n_iter": 43
+    }
+  },
+  "cells": [
+    {
+      "K": 1,
+      "n_tot": 1280,
+      "alloc": "count",
+      "n_per_cluster": [
+        1280
+      ],
+      "counts": [
+        49997
+      ],
+      "rmse_train": 7.875620983165695e-06,
+      "rmse_test": 7.52604441371639e-05,
+      "unmodelled_train": 0,
+      "unmodelled_test": 0,
+      "kappa_max": 6.674366899478025e+16,
+      "nnz_total": 1280,
+      "t_cell_seconds": 280.8628716468811
+    },
+    {
+      "K": 2,
+      "n_tot": 1280,
+      "alloc": "count",
+      "n_per_cluster": [
+        649,
+        631
+      ],
+      "counts": [
+        25364,
+        24633
+      ],
+      "rmse_train": 5.865149089987398e-06,
+      "rmse_test": 7.521525578301465e-05,
+      "unmodelled_train": 0,
+      "unmodelled_test": 0,
+      "kappa_max": 5.497762096104412e+16,
+      "nnz_total": 1280,
+      "t_cell_seconds": 208.0063648223877
+    },
+    {
+      "K": 2,
+      "n_tot": 1280,
+      "alloc": "variance",
+      "n_per_cluster": [
+        655,
+        625
+      ],
+      "counts": [
+        25364,
+        24633
+      ],
+      "rmse_train": 5.848392163695513e-06,
+      "rmse_test": 7.523020448071916e-05,
+      "unmodelled_train": 0,
+      "unmodelled_test": 0,
+      "kappa_max": 5.563654085590411e+16,
+      "nnz_total": 1280,
+      "t_cell_seconds": 205.19324564933777
+    },
+    {
+      "K": 3,
+      "n_tot": 1280,
+      "alloc": "count",
+      "n_per_cluster": [
+        647,
+        330,
+        303
+      ],
+      "counts": [
+        25282,
+        12877,
+        11838
+      ],
+      "rmse_train": 8.285728882271058e-05,
+      "rmse_test": 8.708091077039398e-05,
+      "unmodelled_train": 0,
+      "unmodelled_test": 0,
+      "kappa_max": 5.777171620316976e+16,
+      "nnz_total": 1280,
+      "t_cell_seconds": 176.489914894104
+    },
+    {
+      "K": 3,
+      "n_tot": 1280,
+      "alloc": "variance",
+      "n_per_cluster": [
+        578,
+        364,
+        338
+      ],
+      "counts": [
+        25282,
+        12877,
+        11838
+      ],
+      "rmse_train": 7.978266883758498e-05,
+      "rmse_test": 8.399391659217508e-05,
+      "unmodelled_train": 0,
+      "unmodelled_test": 0,
+      "kappa_max": 5.4736700140965816e+16,
+      "nnz_total": 1280,
+      "t_cell_seconds": 192.03317308425903
+    },
+    {
+      "K": 4,
+      "n_tot": 1280,
+      "alloc": "count",
+      "n_per_cluster": [
+        517,
+        280,
+        242,
+        241
+      ],
+      "counts": [
+        20189,
+        10935,
+        9447,
+        9426
+      ],
+      "rmse_train": 0.00016438644837186476,
+      "rmse_test": 0.00010350748036607146,
+      "unmodelled_train": 0,
+      "unmodelled_test": 0,
+      "kappa_max": 5.023145684810491e+16,
+      "nnz_total": 1280,
+      "t_cell_seconds": 160.09817147254944
+    },
+    {
+      "K": 4,
+      "n_tot": 1280,
+      "alloc": "variance",
+      "n_per_cluster": [
+        491,
+        245,
+        282,
+        262
+      ],
+      "counts": [
+        20189,
+        10935,
+        9447,
+        9426
+      ],
+      "rmse_train": 0.00015172495343935996,
+      "rmse_test": 0.00010225591208841939,
+      "unmodelled_train": 0,
+      "unmodelled_test": 0,
+      "kappa_max": 4.739850438425105e+16,
+      "nnz_total": 1280,
+      "t_cell_seconds": 146.09426164627075
+    }
+  ]
+}

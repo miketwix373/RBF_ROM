@@ -1,0 +1,7 @@
+docs/
+data/
+.claude/
+*.npz
+R-*.out
+__pycache__/
+*.pyc

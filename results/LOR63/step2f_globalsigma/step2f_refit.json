@@ -1,0 +1,157 @@
+{
+  "config": {
+    "k_grid": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_tot": 1280,
+    "seed": 1,
+    "kmeans_seed": 0,
+    "gamma": 1.0,
+    "lambda_rbf": 0.001,
+    "lambda_tikh": 0.0,
+    "n_init": 1,
+    "n_init_outer": 10,
+    "sigma_A_global": [
+      7.929433664784197,
+      9.003538703603846,
+      8.590531606778859
+    ],
+    "dataset": "LOR63",
+    "M_train_mid": 49997,
+    "dt_data": 0.00999999999999801,
+    "sigma_A_mode": "global",
+    "mu_A_mode": "per_cluster",
+    "bandwidth_mode": "attr_scaled"
+  },
+  "partitions": {
+    "1": {
+      "counts": [
+        49997
+      ],
+      "var_weights": [
+        737758.5777918217
+      ],
+      "inertia": 10886191.0,
+      "n_iter": 0
+    },
+    "2": {
+      "counts": [
+        25364,
+        24633
+      ],
+      "var_weights": [
+        293835.8285697844,
+        280070.1141204988
+      ],
+      "inertia": 6588070.5,
+      "n_iter": 24
+    },
+    "3": {
+      "counts": [
+        25282,
+        12877,
+        11838
+      ],
+      "var_weights": [
+        210651.65151059732,
+        132409.1318128673,
+        123171.0959687136
+      ],
+      "inertia": 4397955.0,
+      "n_iter": 15
+    },
+    "4": {
+      "counts": [
+        20189,
+        10935,
+        9447,
+        9426
+      ],
+      "var_weights": [
+        159199.2599776866,
+        79227.67310309154,
+        91231.20196710953,
+        84997.52711037596
+      ],
+      "inertia": 3476585.25,
+      "n_iter": 43
+    }
+  },
+  "cells": [
+    {
+      "K": 1,
+      "n_tot": 1280,
+      "alloc": "count",
+      "n_per_cluster": [
+        1280
+      ],
+      "counts": [
+        49997
+      ],
+      "rmse_train": 7.875620983165695e-06,
+      "unmodelled_train": 0,
+      "t_cell_seconds": 125.00010538101196,
+      "model_path": "results/LOR63/step2f_globalsigma/models/cell_K1_N01280_count.npz"
+    },
+    {
+      "K": 2,
+      "n_tot": 1280,
+      "alloc": "variance",
+      "n_per_cluster": [
+        655,
+        625
+      ],
+      "counts": [
+        25364,
+        24633
+      ],
+      "rmse_train": 5.721498458890288e-06,
+      "unmodelled_train": 0,
+      "t_cell_seconds": 63.292346477508545,
+      "model_path": "results/LOR63/step2f_globalsigma/models/cell_K2_N01280_variance.npz"
+    },
+    {
+      "K": 3,
+      "n_tot": 1280,
+      "alloc": "variance",
+      "n_per_cluster": [
+        578,
+        364,
+        338
+      ],
+      "counts": [
+        25282,
+        12877,
+        11838
+      ],
+      "rmse_train": 7.5873600477999735e-06,
+      "unmodelled_train": 0,
+      "t_cell_seconds": 38.32524824142456,
+      "model_path": "results/LOR63/step2f_globalsigma/models/cell_K3_N01280_variance.npz"
+    },
+    {
+      "K": 4,
+      "n_tot": 1280,
+      "alloc": "variance",
+      "n_per_cluster": [
+        491,
+        245,
+        282,
+        262
+      ],
+      "counts": [
+        20189,
+        10935,
+        9447,
+        9426
+      ],
+      "rmse_train": 1.8800756316314508e-05,
+      "unmodelled_train": 0,
+      "t_cell_seconds": 34.14765000343323,
+      "model_path": "results/LOR63/step2f_globalsigma/models/cell_K4_N01280_variance.npz"
+    }
+  ]
+}

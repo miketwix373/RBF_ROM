@@ -1,0 +1,241 @@
+{
+  "dataset": "LOR63",
+  "K_grid": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "n_grid": [
+    25,
+    50,
+    100,
+    200,
+    400,
+    800
+  ],
+  "seed": 0,
+  "lambda_rbf": 0.001,
+  "lambda_tikh": 1e-08,
+  "energy_threshold": 0.99,
+  "alpha_tangent": 1.0,
+  "robust_stat": "median",
+  "cells": [
+    {
+      "K": 1,
+      "n_per_cluster": 25,
+      "total_rbf": 25,
+      "rel_err": 0.22396527753153925,
+      "nnz": 25,
+      "fit_seconds": 72.75062370300293,
+      "fname": "fit_K1_n25.npz"
+    },
+    {
+      "K": 1,
+      "n_per_cluster": 50,
+      "total_rbf": 50,
+      "rel_err": 0.06110562234408807,
+      "nnz": 50,
+      "fit_seconds": 125.9029893875122,
+      "fname": "fit_K1_n50.npz"
+    },
+    {
+      "K": 1,
+      "n_per_cluster": 100,
+      "total_rbf": 100,
+      "rel_err": 0.014262459495129344,
+      "nnz": 100,
+      "fit_seconds": 211.64626741409302,
+      "fname": "fit_K1_n100.npz"
+    },
+    {
+      "K": 1,
+      "n_per_cluster": 200,
+      "total_rbf": 200,
+      "rel_err": 0.00791000230793408,
+      "nnz": 200,
+      "fit_seconds": 327.9767894744873,
+      "fname": "fit_K1_n200.npz"
+    },
+    {
+      "K": 1,
+      "n_per_cluster": 400,
+      "total_rbf": 400,
+      "rel_err": 0.003930053179881398,
+      "nnz": 400,
+      "fit_seconds": 496.7130687236786,
+      "fname": "fit_K1_n400.npz"
+    },
+    {
+      "K": 1,
+      "n_per_cluster": 800,
+      "total_rbf": 800,
+      "rel_err": 0.002720572850723334,
+      "nnz": 800,
+      "fit_seconds": 715.3654828071594,
+      "fname": "fit_K1_n800.npz"
+    },
+    {
+      "K": 2,
+      "n_per_cluster": 25,
+      "total_rbf": 50,
+      "rel_err": 0.06155844396277387,
+      "nnz": 50,
+      "fit_seconds": 5.452604293823242,
+      "fname": "fit_K2_n25.npz"
+    },
+    {
+      "K": 2,
+      "n_per_cluster": 50,
+      "total_rbf": 100,
+      "rel_err": 0.015553994586222641,
+      "nnz": 100,
+      "fit_seconds": 6.424819707870483,
+      "fname": "fit_K2_n50.npz"
+    },
+    {
+      "K": 2,
+      "n_per_cluster": 100,
+      "total_rbf": 200,
+      "rel_err": 0.004061329942054076,
+      "nnz": 200,
+      "fit_seconds": 7.739156007766724,
+      "fname": "fit_K2_n100.npz"
+    },
+    {
+      "K": 2,
+      "n_per_cluster": 200,
+      "total_rbf": 400,
+      "rel_err": 0.001979665978618908,
+      "nnz": 400,
+      "fit_seconds": 10.739637613296509,
+      "fname": "fit_K2_n200.npz"
+    },
+    {
+      "K": 2,
+      "n_per_cluster": 400,
+      "total_rbf": 800,
+      "rel_err": 0.0013669054745964197,
+      "nnz": 800,
+      "fit_seconds": 18.478259086608887,
+      "fname": "fit_K2_n400.npz"
+    },
+    {
+      "K": 2,
+      "n_per_cluster": 800,
+      "total_rbf": 1600,
+      "rel_err": 0.0011116968634344885,
+      "nnz": 1600,
+      "fit_seconds": 39.53751230239868,
+      "fname": "fit_K2_n800.npz"
+    },
+    {
+      "K": 3,
+      "n_per_cluster": 25,
+      "total_rbf": 75,
+      "rel_err": 0.056598933375590195,
+      "nnz": 75,
+      "fit_seconds": 5.835667133331299,
+      "fname": "fit_K3_n25.npz"
+    },
+    {
+      "K": 3,
+      "n_per_cluster": 50,
+      "total_rbf": 150,
+      "rel_err": 0.013011582886968708,
+      "nnz": 150,
+      "fit_seconds": 7.236835479736328,
+      "fname": "fit_K3_n50.npz"
+    },
+    {
+      "K": 3,
+      "n_per_cluster": 100,
+      "total_rbf": 300,
+      "rel_err": 0.003967192738093028,
+      "nnz": 300,
+      "fit_seconds": 9.022686243057251,
+      "fname": "fit_K3_n100.npz"
+    },
+    {
+      "K": 3,
+      "n_per_cluster": 200,
+      "total_rbf": 600,
+      "rel_err": 0.002028242945678311,
+      "nnz": 600,
+      "fit_seconds": 13.696542978286743,
+      "fname": "fit_K3_n200.npz"
+    },
+    {
+      "K": 3,
+      "n_per_cluster": 400,
+      "total_rbf": 1200,
+      "rel_err": 0.001291093074909724,
+      "nnz": 1200,
+      "fit_seconds": 26.635718822479248,
+      "fname": "fit_K3_n400.npz"
+    },
+    {
+      "K": 3,
+      "n_per_cluster": 800,
+      "total_rbf": 2400,
+      "rel_err": 0.001127557386735991,
+      "nnz": 2400,
+      "fit_seconds": 69.33862328529358,
+      "fname": "fit_K3_n800.npz"
+    },
+    {
+      "K": 4,
+      "n_per_cluster": 25,
+      "total_rbf": 100,
+      "rel_err": 0.043510694341006025,
+      "nnz": 100,
+      "fit_seconds": 8.32536005973816,
+      "fname": "fit_K4_n25.npz"
+    },
+    {
+      "K": 4,
+      "n_per_cluster": 50,
+      "total_rbf": 200,
+      "rel_err": 0.01029380250128798,
+      "nnz": 200,
+      "fit_seconds": 9.627620458602905,
+      "fname": "fit_K4_n50.npz"
+    },
+    {
+      "K": 4,
+      "n_per_cluster": 100,
+      "total_rbf": 400,
+      "rel_err": 0.0023547791486924555,
+      "nnz": 400,
+      "fit_seconds": 12.29844856262207,
+      "fname": "fit_K4_n100.npz"
+    },
+    {
+      "K": 4,
+      "n_per_cluster": 200,
+      "total_rbf": 800,
+      "rel_err": 0.0013180414143468366,
+      "nnz": 800,
+      "fit_seconds": 19.74306893348694,
+      "fname": "fit_K4_n200.npz"
+    },
+    {
+      "K": 4,
+      "n_per_cluster": 400,
+      "total_rbf": 1600,
+      "rel_err": 0.0009803622472781496,
+      "nnz": 1600,
+      "fit_seconds": 40.30040645599365,
+      "fname": "fit_K4_n400.npz"
+    },
+    {
+      "K": 4,
+      "n_per_cluster": 800,
+      "total_rbf": 3200,
+      "rel_err": 0.0008354620448441402,
+      "nnz": 3200,
+      "fit_seconds": 119.65052819252014,
+      "fname": "fit_K4_n800.npz"
+    }
+  ]
+}

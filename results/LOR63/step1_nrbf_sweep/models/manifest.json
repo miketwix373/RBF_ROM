@@ -1,0 +1,67 @@
+{
+  "config": {
+    "n_rbf_grid": [
+      5,
+      20,
+      100,
+      800,
+      3200,
+      6400
+    ],
+    "seed": 1,
+    "lambda_rbf": 0.001,
+    "gamma": 1.0,
+    "n_knn": 5,
+    "n_init": 1,
+    "M": 49997,
+    "N": 3,
+    "dt_data": 0.00999999999999801,
+    "sigma_l63": 10.0,
+    "rho_l63": 28.0,
+    "beta_l63": 2.6666666666666665
+  },
+  "models": [
+    {
+      "n_rbf": 5,
+      "file": "model_n_rbf_00005.npz",
+      "rel_err_alpha_dot": 0.537136057436793,
+      "nnz": 5,
+      "t_fit_seconds": 1.2113423347473145
+    },
+    {
+      "n_rbf": 20,
+      "file": "model_n_rbf_00020.npz",
+      "rel_err_alpha_dot": 0.17266595454584194,
+      "nnz": 20,
+      "t_fit_seconds": 7.627812385559082
+    },
+    {
+      "n_rbf": 100,
+      "file": "model_n_rbf_00100.npz",
+      "rel_err_alpha_dot": 0.07961270906076089,
+      "nnz": 100,
+      "t_fit_seconds": 25.338517427444458
+    },
+    {
+      "n_rbf": 800,
+      "file": "model_n_rbf_00800.npz",
+      "rel_err_alpha_dot": 0.013325038411718178,
+      "nnz": 800,
+      "t_fit_seconds": 72.04243612289429
+    },
+    {
+      "n_rbf": 3200,
+      "file": "model_n_rbf_03200.npz",
+      "rel_err_alpha_dot": 0.0039965850352356724,
+      "nnz": 3200,
+      "t_fit_seconds": 260.76712799072266
+    },
+    {
+      "n_rbf": 6400,
+      "file": "model_n_rbf_06400.npz",
+      "rel_err_alpha_dot": 0.0026526143930470205,
+      "nnz": 6400,
+      "t_fit_seconds": 667.0413076877594
+    }
+  ]
+}
