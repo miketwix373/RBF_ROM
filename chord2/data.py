@@ -52,6 +52,8 @@ REGISTRY: dict[str, tuple[str, str]] = {
     "LOR63":        ("LOR63/results/lor63/stats.npz",     "scalar1d"),
     "LOR96":        ("LOR96/results/lor96/stats.npz",     "scalar1d"),
     "LOR96_high_int": ("LOR96/results/high_int/stats.npz", "scalar1d"),
+    "LOR96_vlachas_F8":  ("LOR96/results/vlachas_F8/stats.npz",  "scalar1d"),
+    "LOR96_vlachas_F10": ("LOR96/results/vlachas_F10/stats.npz", "scalar1d"),
     "KOL20":        ("KOL20/stats.npz",                   "vector2d_uv"),
     "KOL42":        ("KOL42/stats.npz",                   "vector2d_uv"),
     "RB":           ("RB/RB_snapshots.npz",               "vector2d_uv"),

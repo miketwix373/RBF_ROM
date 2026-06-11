@@ -1,0 +1,131 @@
+{
+  "dataset": "LOR96_vlachas_F8",
+  "K_grid": [
+    1,
+    10
+  ],
+  "n_grid": [
+    10,
+    20,
+    40,
+    80,
+    100,
+    200
+  ],
+  "seed": 0,
+  "lambda_rbf": 0.001,
+  "lambda_tikh": 1e-08,
+  "energy_threshold": 0.99,
+  "alpha_tangent": 1.0,
+  "robust_stat": "median",
+  "cells": [
+    {
+      "K": 1,
+      "n_per_cluster": 10,
+      "total_rbf": 10,
+      "rel_err": 0.996120711389631,
+      "nnz": 10,
+      "fit_seconds": 46.59228801727295,
+      "fname": "fit_K1_n10.npz"
+    },
+    {
+      "K": 1,
+      "n_per_cluster": 20,
+      "total_rbf": 20,
+      "rel_err": 0.9949589566227082,
+      "nnz": 20,
+      "fit_seconds": 81.0386803150177,
+      "fname": "fit_K1_n20.npz"
+    },
+    {
+      "K": 1,
+      "n_per_cluster": 40,
+      "total_rbf": 40,
+      "rel_err": 0.9907185376870347,
+      "nnz": 40,
+      "fit_seconds": 129.1830713748932,
+      "fname": "fit_K1_n40.npz"
+    },
+    {
+      "K": 1,
+      "n_per_cluster": 80,
+      "total_rbf": 80,
+      "rel_err": 0.9864341657134261,
+      "nnz": 80,
+      "fit_seconds": 256.6997456550598,
+      "fname": "fit_K1_n80.npz"
+    },
+    {
+      "K": 1,
+      "n_per_cluster": 100,
+      "total_rbf": 100,
+      "rel_err": 0.9860889115730068,
+      "nnz": 100,
+      "fit_seconds": 293.83899545669556,
+      "fname": "fit_K1_n100.npz"
+    },
+    {
+      "K": 1,
+      "n_per_cluster": 200,
+      "total_rbf": 200,
+      "rel_err": 0.9782020214531548,
+      "nnz": 200,
+      "fit_seconds": 358.19950675964355,
+      "fname": "fit_K1_n200.npz"
+    },
+    {
+      "K": 10,
+      "n_per_cluster": 10,
+      "total_rbf": 100,
+      "rel_err": 0.9967498502547638,
+      "nnz": 100,
+      "fit_seconds": 50.219098806381226,
+      "fname": "fit_K10_n10.npz"
+    },
+    {
+      "K": 10,
+      "n_per_cluster": 20,
+      "total_rbf": 200,
+      "rel_err": 0.993783427424854,
+      "nnz": 200,
+      "fit_seconds": 61.747557640075684,
+      "fname": "fit_K10_n20.npz"
+    },
+    {
+      "K": 10,
+      "n_per_cluster": 40,
+      "total_rbf": 400,
+      "rel_err": 0.9876055112187411,
+      "nnz": 400,
+      "fit_seconds": 76.62112522125244,
+      "fname": "fit_K10_n40.npz"
+    },
+    {
+      "K": 10,
+      "n_per_cluster": 80,
+      "total_rbf": 800,
+      "rel_err": 0.9761170270633418,
+      "nnz": 800,
+      "fit_seconds": 110.90089988708496,
+      "fname": "fit_K10_n80.npz"
+    },
+    {
+      "K": 10,
+      "n_per_cluster": 100,
+      "total_rbf": 1000,
+      "rel_err": 0.9702781321084508,
+      "nnz": 1000,
+      "fit_seconds": 125.16514229774475,
+      "fname": "fit_K10_n100.npz"
+    },
+    {
+      "K": 10,
+      "n_per_cluster": 200,
+      "total_rbf": 2000,
+      "rel_err": 0.9414239984054865,
+      "nnz": 2000,
+      "fit_seconds": 197.92971014976501,
+      "fname": "fit_K10_n200.npz"
+    }
+  ]
+}

@@ -231,6 +231,16 @@ def main() -> None:
     p.add_argument("--K-grid", type=int, nargs="+", default=[1, 2, 3, 4])
     p.add_argument("--n-grid", type=int, nargs="+",
                    default=[25, 50, 100, 200, 400, 800])
+    p.add_argument("--stride", type=int, default=1,
+                   help="snapshot stride into the dataset (default 1). "
+                        "Over-resolved datasets like LOR96 vlachas_F8 "
+                        "(dt=0.01, tau_int~0.3 s) want stride>=10 to keep "
+                        "Phi tractable and decorrelate rows.")
+    p.add_argument("--cells", type=str, nargs="+", default=None,
+                   help="explicit cell list as K:n_per_cluster pairs "
+                        "(e.g. 1:6000 10:600). Overrides --K-grid x --n-grid "
+                        "when set. Use when matched-budget pairs are needed "
+                        "across K with asymmetric n_per_cluster (LOR96).")
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--n-init", type=int, default=10)
     p.add_argument("--lambda-rbf", type=float, default=1e-3)
@@ -245,11 +255,11 @@ def main() -> None:
                    help="parallel processes; 1 runs serial in-process")
     args = p.parse_args()
 
-    ds = data.load(args.dataset)
+    ds = data.load(args.dataset, stride=args.stride)
     A = ds.u.astype(np.float64)
     dt_data = float(ds.t[1] - ds.t[0])
-    print(f"Loaded {args.dataset}: M={A.shape[0]}, r={A.shape[1]}, "
-          f"dt={dt_data:g}")
+    print(f"Loaded {args.dataset} (stride={args.stride}): M={A.shape[0]}, "
+          f"r={A.shape[1]}, dt={dt_data:g}")
 
     A_mid, dAdt = sindy.deriv_5point(A, dt_data)
     print(f"Derivatives via 5-point stencil: M_mid={A_mid.shape[0]}, "
@@ -260,7 +270,14 @@ def main() -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     print(f"Output dir: {out_dir}")
 
-    cells = [(K, n_pc) for K in args.K_grid for n_pc in args.n_grid]
+    if args.cells is not None:
+        cells = []
+        for tok in args.cells:
+            K_str, n_str = tok.split(":")
+            cells.append((int(K_str), int(n_str)))
+    else:
+        cells = [(K, n_pc) for K in args.K_grid for n_pc in args.n_grid]
+    print(f"Cells ({len(cells)}): {cells}")
     hparams = {
         "seed": args.seed, "n_init": args.n_init,
         "lambda_rbf": args.lambda_rbf, "lambda_tikh": args.lambda_tikh,
